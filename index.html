@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page for users not logged in to Luxury Bids"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <title>Luxury Bids | Listings</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <i
+          class="fa-solid fa-stopwatch fa-1x mx-2 ms-3"
+          style="color: #ffffff; font-size: 24px"
+        ></i>
+        <a class="navbar-brand me-5 white-text" href="index.html"
+          >Luxury Bids</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active white"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white" href="/profile/login/">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white" id="#" href="../profile/login/"
+                >Log-in</a
+              >
+            </li>
+          </ul>
+          <form id="search" class="d-flex mx-4">
+            <input
+              required
+              minlength="2"
+              name="term"
+              type="search"
+              class="form-control me-2"
+              id="searchInput"
+              placeholder="Search for listings..."
+            />
+            <button class="btn btn-two btn-outline-white">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div class="slider">
+      <img
+        src="../media/painting-rubens.jpg"
+        alt="A close up of a baroque painting with a figure surrounded by lions"
+        class="slide slider-image"
+      />
+      <img
+        src="../media/pocket-watch.jpg"
+        alt="An old pocket-watch lying to the left in sand over a map"
+        class="slide slider-image"
+      />
+      <img
+        src="../media/banner-coins.jpg"
+        alt="A close up banner image showing lots of ancient gold coins"
+        class="slide slider-image"
+      />
+    </div>
+    <main>
+      <div class="d-flex align-items-center justify-content-center">
+        <h1 class="text-center" style="margin: 70px 0 30px 0">
+          May the best bidder win!
+        </h1>
+      </div>
+      <div class="d-flex align-items-center justify-content-center mb-4">
+        <a
+          href="../profile/login/"
+          class="btn btn-two btn-lg btn-success"
+          width=""
+          style="
+            margin-top: 50px;
+            padding: 12.5px;
+            border-radius: 0.65rem;
+            text-decoration: none;
+          "
+          ;
+          >Log in to create</a
+        >
+      </div>
+
+      <section class="d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+          <div class="grid-listings" id="listings">
+            <!-- Listing cards will go here -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="footer mt-auto py-5 green col-md-12 justify-content-center my-5 pt-5 text-muted text-center text-small mb-0 green"
+    >
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Help</a>
+        </li>
+      </ul>
+      <p class="mb-1 text-light">&copy; 2023 Luxury Bids</p>
+    </footer>
+  </body>
+</html>

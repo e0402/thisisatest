@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Create a new Luxury Bids user account" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link href="/dist/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <link rel="shortcut icon" href="#" />
+    <title>Luxury Bids | Register</title>
+  </head>
+  <body>
+    <main class="form-signin w-100 m-auto">
+      <section class="vh-150 green">
+        <div class="container py-5 h-100">
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="col-12 col-md-10 col-lg-12 col-xl-10">
+              <div class="card" style="border-radius: 1rem">
+                <div class="row g-0">
+                  <div class="col-lg-7 d-none d-lg-block">
+                    <img
+                      src="../../media/champagne-bottle-register.jpg"
+                      alt="Two champagne bottles, one in front of the other against grey background"
+                      class=""
+                      style="border-radius: 1rem 0 0 1rem"
+                      height="100%"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="col-md-12 col-lg-5 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5 text-black">
+                      <form id="registerForm">
+                        <div class="d-flex align-items-center mb-3 pb-1">
+                          <i
+                            class="fa-solid fa-stopwatch fa-3x me-3 mb-5 mt-3"
+                            style="color: #000000"
+                          ></i>
+                          <span class="h1 fw-bold mb-4 logo-font h1-alt-color"
+                            >Luxury Bids</span
+                          >
+                        </div>
+
+                        <h5
+                          class="fw-normal mb-3 pb-3"
+                          style="letter-spacing: 1px"
+                        >
+                          Please register a new user account:
+                        </h5>
+
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="registerUsername"><strong>Username (min 5 characters)*:</strong></label>
+                          <input
+                              type="text"
+                              name="name"
+                              id="registerUsername"
+                              class="form-control form-control-lg"
+                              required
+                              minlength="5"
+                              pattern="^[\w]+$"
+                              title="Combinations of either uppercase or lowercase letters, numbers or underscore are allowed (e.g. SomeUsername_321). Min 5 characters"
+                              placeholder="Myuser123"
+                          />
+                      </div>
+                      
+                      <div class="form-outline mb-4">
+                          <label class="form-label" for="registerEmail"><strong>Your Noroff email*:</strong></label>
+                          <input
+                              type="email"
+                              name="email"
+                              id="registerEmail"
+                              class="form-control form-control-lg"
+                              required
+                              pattern="^\w+@stud\.noroff\.no$"
+                              title="Only Noroff emails may be used (e.g. student@stud.noroff.no)"
+                              placeholder="example@stud.noroff.no"
+                          />
+                      </div>
+                      
+                      <div class="form-outline mb-4">
+                          <label class="form-label" for="registerPassword"><strong>Password (min 8 characters)*:</strong></label>
+                          <input
+                              type="password"
+                              name="password"
+                              id="registerPassword"
+                              class="form-control form-control-lg"
+                              required
+                              minlength="8"
+                              title="Must only at least 8 characters. Combinations of uppercase, lowercase letters and numbers allowed"
+                              placeholder="password123"
+                          />
+                      </div>
+                      
+                      <div class="form-outline mb-4">
+                          <label class="form-label" for="registerAvatar"><strong>Avatar (optional):</strong></label>
+                          <input
+                              type="url"
+                              name="avatar"
+                              id="registerAvatar"
+                              class="form-control form-control-lg"
+                              title="Needs to be in URL format (e.g. https://example/id/12/345)"
+                              placeholder="https://example/id/12/345"
+                          />
+                      </div>
+                      
+                          <div class="pt-1 mb-4">
+                            <button class="btn btn-two btn-success btn-lg me-2">
+                              Create account
+                            </button>
+                            <a
+                              href="../login/"
+                              class=""
+                              width=""
+                              style="
+                                padding: 8px;
+                                border-radius: 0.65rem;
+                                color: #393f81;
+                              "
+                              ;
+                              >Log in here</a
+                            >
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

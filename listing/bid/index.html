@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bid on a single Luxury Bids Auction listing"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link href="/dist/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="/src/js/index.mjs" defer type="module"></script>
+    <title>Luxury Bids | Listing</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <div>
+          <i
+            class="fa-solid fa-stopwatch fa-1x mx-2 ms-3"
+            style="color: #ffffff; font-size: 24px"
+          ></i>
+          <a class="navbar-brand me-5 logo-font-nav" href="/listings/"
+            >Luxury Bids</a
+          >
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active white"
+                aria-current="page"
+                href="/listings/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white" href="/profile/edit/">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link white"
+                id="logout-link"
+                href="../../profile/login/"
+                >Log-out</a
+              >
+            </li>
+          </ul>
+          <form id="search" class="d-flex mx-4">
+            <input
+              required
+              minlength="2"
+              name="term"
+              type="search"
+              class="form-control me-2"
+              id="searchInput"
+              placeholder="Only works on listings..."
+            />
+            <button class="btn btn-outline-white">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main class="">
+      <section
+        class="d-flex align-items-center justify-content-center mb-5"
+        style="margin-top: 150px"
+      >
+        <div class="card border-0" style="width: 42rem">
+          <div class="card-body">
+            <div class="col-12 col-lg-12" id="auctionListing">
+              <!-- Single listing -->
+            </div>
+            <div id="allBidsOnListing"></div>
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="margin-top: 50px"
+            >
+              <p class="fw-bold fs-5">Choose a bid amount:</p>
+            </div>
+            <div class="mx-4 mt-2">
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                <li class="d-flex" style="margin-top: 14px">
+                  <form id="bidOnListing" action="">
+                    <div class="form-outline d-inline-block">
+                      <input
+                        type="number"
+                        name="amount"
+                        value=""
+                        style="width: 100px; height: 35px; margin-top: -3px"
+                        id="amount"
+                        placeholder="1000"
+                        class="form-control form-control-lg"
+                        required
+                      />
+                    </div>
+                    <div class="pt-3 d-inline-block mb-5">
+                      <button
+                        class="btn btn-success"
+                        style="
+                          height: 45px;
+                          width: 100px;
+                          margin: -6px 0 0 10px;
+                        "
+                        data-id=""
+                      >
+                        Bid now
+                      </button>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-5">
+              <a
+                href="../../listings/"
+                class="btn btn-two btn-lg btn-outline-success"
+                width=""
+                style="
+                  padding: 8px;
+                  border-radius: 0.65rem;
+                  text-decoration: none;
+                "
+                >Back to feed</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="footer mt-auto py-5 green col-md-12 justify-content-center my-5 pt-5 text-muted text-center text-small mb-0 green"
+    >
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Help</a>
+        </li>
+      </ul>
+      <p class="mb-1 text-light">&copy; 2023 Luxury Bids</p>
+    </footer>
+  </body>
+</html>
